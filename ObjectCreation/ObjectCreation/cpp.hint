@@ -1,0 +1,4 @@
+// 提示文件帮助 Visual Studio IDE 解释 Visual C++ 标识符,
+// 如函数和宏的名称。
+// 有关详细信息，请参见 https://go.microsoft.com/fwlink/?linkid=865984
+#define DEFINE_INTERFACE_FACTORY(T) class DEFINE_INTERFACE_FACTORY_NAME(T) : { typedef std::function<T* ()> CreateMethod; private: std::map<std::string, CreateMethod> mCreateMethods; public: void RegisterCreateMethod(std::string alias, CreateMethod createMethod) { mCreateMethods[alias] = createMethod; } T* CreateInstance(std::string alias) { if (mCreateMethods.find(alias) != mCreateMethods.end()) { return mCreateMethods[alias](); } return nullptr; } };

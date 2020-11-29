@@ -1,0 +1,8 @@
+#include "Interface.h"
+#include "IProduct.h"
+
+
+DEFINE_INTERFACE_FACTORY(IProduct);
+DEFINE_INTERFACE_FACTORY(IProduct1);
+DEFINE_INTERFACE_FACTORY(IProduct2);
+DEFINE_INTERFACE_FACTORY(IProduct3);
