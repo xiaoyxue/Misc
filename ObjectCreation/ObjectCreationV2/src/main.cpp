@@ -5,8 +5,11 @@
 
 int main()
 {
-	IProductA* productA1 = CreateInstanceRawPtr<IProductA>("Product1");
+	IProductA* productA1 = CreateInstanceRawPtr<IProductA>("ProductA1");
 	productA1->Process();
+
+	IProductA* productA2 = CreateInstanceRawPtr<IProductA>("ProductA2");
+	productA2->Process();
 
 	IProductB* productB1 = CreateInstanceRawPtr<IProductB>("Product1");
 	productB1->Process();

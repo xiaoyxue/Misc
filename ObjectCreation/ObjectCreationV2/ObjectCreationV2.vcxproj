@@ -147,6 +147,8 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\products\Camera.cpp" />
     <ClCompile Include="src\products\Product1.cpp" />
+    <ClCompile Include="src\test\test1.cpp" />
+    <ClCompile Include="src\test\test2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\common\Interface.h" />

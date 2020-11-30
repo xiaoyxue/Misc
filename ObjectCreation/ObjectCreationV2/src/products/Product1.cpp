@@ -11,8 +11,19 @@ public:
 	}
 };
 
-GY_IMPLEMENTATION_DEF(IProductA, ProductA1, "Product1");
+GY_IMPLEMENTATION_DEF(IProductA, ProductA1, "ProductA1");
 
+
+class ProductA2 : public IProductA
+{
+public:
+	void Process() override
+	{
+		std::cout << "ProductA2" << std::endl;
+	}
+};
+
+GY_IMPLEMENTATION_DEF(IProductA, ProductA2, "ProductA2");
 
 class ProductB1 : public IProductB
 {
