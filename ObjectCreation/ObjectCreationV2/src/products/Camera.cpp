@@ -7,4 +7,4 @@ public:
 		std::cout << "this is phinhole camera" << std::endl;
 	}
 };
-GY_IMPLEMENTATION_DEF(Camera, PhinholeCamera, "phinhole");
+GY_IMPLEMENTATION_DEF(Camera, PhinholeCamera, "pinhole");

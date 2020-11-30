@@ -14,13 +14,15 @@ int main()
 	IProductC* productC = CreateInstanceRawPtr<IProductC>("ProductC");
 	productC->Process();
 
-	Camera* pRawcamera = CreateInstanceRawPtr<Camera>("phinhole");
+	Camera* pRawcamera = CreateInstanceRawPtr<Camera>("pinhole");
 	pRawcamera->Print();
 
-	auto pSharedCamera = CreateInstanceSharedPtr<Camera>("phinhole");
+	auto pSharedCamera = CreateInstanceSharedPtr<Camera>("pinhole");
 	pSharedCamera->Print();
 
-	auto pUniqueCamera = CreateInstanceUniquePtr<Camera>("phinhole");
+	auto pUniqueCamera = CreateInstanceUniquePtr<Camera>("pinhole");
 	pUniqueCamera->Print();
+
+
 	return 0;
 }
